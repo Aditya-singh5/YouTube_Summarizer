@@ -13,19 +13,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Video ID extraction function
-'''
 def get_video_id(url):
-    # Regular expression to match YouTube video URLs
-    pattern = r'https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})'
-    match = re.search(pattern,url)
-    return match.group(1) if match else None
-'''
-def get_video_id(url):
-    """Extract YouTube video ID from common YouTube URL formats."""
+    """Extract YouTube video ID from YouTube URL."""
 
     parsed_url = urlparse(url)
 
-    # https://www.youtube.com/watch?v=VIDEO_ID
     if parsed_url.hostname in ["www.youtube.com", "youtube.com", "m.youtube.com"]:
         if parsed_url.path == "/watch":
             return parse_qs(parsed_url.query).get("v", [None])[0]
