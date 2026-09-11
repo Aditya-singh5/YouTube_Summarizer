@@ -1,0 +1,11 @@
+youtube-transcript-api
+faiss-cpu
+langchain
+langchain-community
+langchain-anthropic
+gradio
+langchain-huggingface
+fastapi
+starlette
+jinja2
+sentence-transformers

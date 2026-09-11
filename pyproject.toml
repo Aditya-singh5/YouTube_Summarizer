@@ -1,0 +1,21 @@
+[project]
+name = "youtube-summarizer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "faiss-cpu>=1.15.0",
+    "fastapi>=0.141.1",
+    "gradio>=6.26.0",
+    "huggingface-hub>=1.30.0",
+    "jinja2>=3.1.6",
+    "langchain>=1.4.0",
+    "langchain-anthropic>=1.7.1",
+    "langchain-classic>=1.0.8",
+    "langchain-community>=0.4.2",
+    "langchain-huggingface>=1.2.2",
+    "sentence-transformers>=6.0.1",
+    "starlette>=1.6.0",
+    "youtube-transcript-api>=1.2.4",
+]
